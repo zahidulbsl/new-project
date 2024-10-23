@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --georama-font: "Georama", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --parimary-color: #f15936;
+    --secondary-color: #0b4b78;
+    --tertiary-color: #ffffff;
+}
+
+.img{
+    max-width: 100%;
+    display: inline-block;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.btn{
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    font-family: var(--georama-font);
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s linear;
+    background-color: var(--parimary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--parimary-color);
+
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--secondary-color);
+
+}
+
+/* Header Css start */
+
+header {
+    box-shadow: 0 0 15px rgba(56, 53, 61, .15);
+}
+
+.header-top{
+    background-color: #298843;
+    padding: 5px 0px;
+}
+
+.header-top p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: var(--poppins-font);
+    color: var(--tertiary-color);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.main-header{
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header img{
+    max-width: 130px;
+
+}
+
+/* Header Css End */
+
+/* Banner Css Start */
+
+#Banner{
+    padding: 100px 0px;
+    background-image: url(/images/6.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+#Banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-weight: 100%;
+    background-color: #0000005c;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+#Banner .content{
+    max-width: 720px;
+    position: relative;
+    z-index: 2;
+
+}
+
+#Banner .content h1{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    color: var(--tertiary-color);
+    margin: 0px 0px 20px;
+}
+#Banner .content h3{
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    color: var(--tertiary-color);
+    margin: 0px 0px 20px;
+}
+
+#Banner .content ul{
+    padding: 0px 0px 0px 20px;
+    margin: 0px 0px 20px;
+}
+#Banner .content ul li{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    color: var(--tertiary-color);
+    
+}
+
+/* Banner Css End */
+
+/* About Us Css Start */
+
+#about-us{
+    padding: 60px 0px;
+}
+
+#about-us .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+#about-us .row .col{
+    max-width: calc(50% - 25px);
+    width: 100%;
+    
+}
+
+
+#about-us h3{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: var(--georama-font);
+    color: var(--secondary-color);
+    margin: 0px 0px 15px;
+    
+}
+
+#about-us h2{
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 700;
+    font-family: var(--georama-font);
+    color: var(--secondary-color);
+    margin: 0px 50px 15px 0px;
+    
+}
+
+#about-us p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    color: var(--secondary-color);
+    margin: 0px 0px 20px;
+      
+}
+
